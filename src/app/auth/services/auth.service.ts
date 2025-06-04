@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:8080/api/auth';  // URL backend Spring Boot
+  private apiUrl = 'http://localhost:8080/davivienda';  // URL backend Spring Boot
   private loggedIn = new BehaviorSubject<boolean>(!!localStorage.getItem('token'));
 
   constructor(private http: HttpClient) {}
